@@ -110,4 +110,7 @@ textTransformButton.addEventListener('click', () => {
     textArea.style.textTransform = isTextTransform ? 'uppercase' : 'lowercase';
 })
 
-colorInput.addEventListener('')
+colorInput.addEventListener('input', ()=>{
+    const colorInputValue = colorInput.value;
+    textArea.style.color = colorInputValue; 
+})
